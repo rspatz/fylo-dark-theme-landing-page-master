@@ -711,7 +711,7 @@ footer .fylo-logo-footer {
   .contact-info {
     font-family: "OpenSans-Regular";
     font-size: 1.1rem;
-    width: 90%;
+    width: 80%;
     line-height: 3rem;
     margin: 0.5rem 0 0 -1rem;
     color: var(--color-light-grey);
