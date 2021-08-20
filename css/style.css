@@ -80,7 +80,7 @@ p {
   font-size: 1.1rem;
 }
 
-header {
+.header {
   width: 90%;
 }
 
@@ -104,7 +104,7 @@ header {
 }
 @media only screen and (max-width: 31.25em) {
   .header-text {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -163,6 +163,7 @@ header {
   text-align: center;
   line-height: 1.5rem;
 }
+
 @media only screen and (max-width: 31.25em) {
   .point-1,
   .point-2,
@@ -374,6 +375,11 @@ header {
   border: none;
 }
 
+/* Navigation */
+.hamburger {
+  display: none;
+}
+
 .main-nav {
   display: flex;
   flex-direction: row;
@@ -395,22 +401,41 @@ header {
   display: inline-block;
 }
 @media only screen and (max-width: 31.25em) {
+  .hamburger {
+    display: block;
+    margin: 0 0 0 20rem;
+    width: 10%;
+    background: var(--color-accent-cyan);
+    border-radius: 15%;
+    border: transparent;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+
   .main-nav {
-    width: 65%;
-    margin: 0 0 4rem 8rem;
+    display: none;
+    flex-direction: column;
+    margin: 0 0 4rem 2rem;
   }
 
   .main-nav li {
     margin: 0;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3rem;
   }
 
   .main-nav a {
     margin: 0 0 0 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--color-accent-cyan);
   }
 
-  a {
-    font-size: 1rem;
+  .main-nav.show {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -435,7 +460,7 @@ header {
   color: var(--color-neutral-white);
   cursor: pointer;
   font-size: 0.9rem;
-  margin: 1.5rem 35rem;
+  margin: 1.5rem 31rem;
   padding: 1rem 1.5rem;
   width: 18%;
   display: inline-block;
@@ -444,7 +469,7 @@ header {
 
 @media only screen and (max-width: 31.25em) {
   .button {
-    margin: 1rem 16% 0 16%;
+    margin: 1rem 16% 0 20%;
     padding: 1.25rem 2rem;
     width: 65%;
     border-radius: 10rem;
@@ -518,6 +543,14 @@ header {
   margin: 1rem;
   padding: 1.75rem;
 }
+
+.testimonial-1:hover,
+.testimonial-2:hover,
+.testimonial-3:hover {
+  transform: translateY(-1.5rem) scale(1);
+  transition: all 750ms ease-in-out;
+}
+
 @media only screen and (max-width: 31.25em) {
   .testimonial-1,
   .testimonial-2,
