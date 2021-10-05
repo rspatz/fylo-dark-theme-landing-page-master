@@ -8,7 +8,7 @@ img {
 }
 
 :root {
-  --color-primary-intro: hsl(217, 28%, 15%);
+  --color-primary-intro: hsl(217, 18%, 34%);
   --color-primary-main: hsl(218, 28%, 13%);
   --color-primary-testimonials: hsl(219, 30%, 18%);
   --color-primary-footer: hsl(216, 53%, 9%);
@@ -20,44 +20,44 @@ img {
 }
 
 @font-face {
-  font-family: "Raleway-Regular";
-  src: url("../fonts/raleway/Raleway-Regular.ttf");
-  format: "true-type";
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/raleway/Raleway-Regular.ttf');
+  format: 'true-type';
 }
 @font-face {
-  font-family: "Raleway-SemiBold";
-  src: url("../fonts/raleway/Raleway-SemiBold.ttf");
-  format: "true-type";
+  font-family: 'Raleway-SemiBold';
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf');
+  format: 'true-type';
 }
 @font-face {
-  font-family: "OpenSans-Regular";
-  src: url("../fonts/open-sans/OpenSans-Regular.ttf");
-  format: "true-type";
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+  format: 'true-type';
 }
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../fonts/open-sans/OpenSans-Bold.ttf");
-  format: "true-type";
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/open-sans/OpenSans-Bold.ttf');
+  format: 'true-type';
 }
 body {
   background-color: var(--color-primary-main);
 }
 
 a {
-  font-family: "Raleway-Regular";
+  font-family: 'Raleway-Regular';
   color: var(--color-light-grey);
   text-decoration: none;
   font-size: 0.6rem;
 }
 
 h1 {
-  font-family: "Raleway-SemiBold";
+  font-family: 'Raleway-SemiBold';
   color: var(--color-neutral-white);
   font-size: 2rem;
 }
 
 h3 {
-  font-family: "Raleway-SemiBold";
+  font-family: 'Raleway-SemiBold';
   color: var(--color-neutral-white);
   font-size: 1.25rem;
   text-align: center;
@@ -67,7 +67,7 @@ h3 {
 }
 
 h6 {
-  font-family: "OpenSans-Regular";
+  font-family: 'OpenSans-Regular';
   color: var(--color-light-grey);
   font-size: 0.5rem;
   text-align: center;
@@ -75,7 +75,7 @@ h6 {
 }
 
 p {
-  font-family: "OpenSans-Regular";
+  font-family: 'OpenSans-Regular';
   color: var(--color-neutral-white);
   font-size: 1.1rem;
 }
@@ -85,7 +85,7 @@ p {
 }
 
 .header-image {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 @media only screen and (max-width: 31.25em) {
@@ -369,7 +369,7 @@ p {
 }
 
 .email input {
-  font-family: "Raleway-Regular";
+  font-family: 'Raleway-Regular';
   font-size: 1rem;
   width: 75%;
   border: none;
@@ -706,10 +706,12 @@ footer .fylo-logo-footer {
 
 .contact-info {
   color: var(--color-light-grey);
+  margin-top: 1.5rem;
+  line-height: 3rem;
 }
 @media only screen and (max-width: 31.25em) {
   .contact-info {
-    font-family: "OpenSans-Regular";
+    font-family: 'OpenSans-Regular';
     font-size: 1.1rem;
     width: 80%;
     line-height: 3rem;
@@ -720,7 +722,7 @@ footer .fylo-logo-footer {
 
 .telephone-icon,
 .email-icon {
-  margin: 0 0 1rem 2rem;
+  margin: 0 1rem 0 2rem;
 }
 @media only screen and (max-width: 31.25em) {
   .telephone-icon,
@@ -748,7 +750,7 @@ footer .fylo-logo-footer {
 
 .footer-links a {
   text-decoration: none;
-  font-family: "OpenSans-Regular";
+  font-family: 'OpenSans-Regular';
   font-size: 1rem;
   color: var(--color-light-grey);
   line-height: 3rem;
